@@ -1,0 +1,223 @@
+/* *********************************************************************************************************************
+	One% CSS Grid - 12 Columns Fluid CSS Grid System
+
+	Why One% ? Let’s count ...
+		we have 12 columns (magic number divided by 2, 3, 4, 6)
+
+		for 12 columns we need 11 margins
+
+		so if we count margin 3%, then 3% * 11 margins = 33%
+
+		and if we count width of 1 column 5.5%, than 5.5% * 12 columns = 66%
+
+		in the end we have 33% + 66% = 99% aaand ???
+
+		1% is still here so that's the name - One%
+
+	2 starting options ? Let’s count a bit more ...
+		1200px - perfectly fits 1280 screens
+			12 columns
+			margin 3% / 36px (full-width)
+			col1 5.5% / 66px (full-width)
+
+		1000px - perfectly fits 1024 screens
+			12 columns
+			margin 3% / 30px (full-width)
+			col1 5.5% / 55px (full-width)
+*/
+
+
+
+
+
+/* *********************************************************************************************************************
+ * Main container for all
+ */
+.main_wrapper {
+	margin: 0 auto;
+	padding: 0 0 0 1%; /* THAT'S THE NAME ;) */
+}
+
+.main_wrapper {
+	max-width: 1010px;
+}
+
+.onerow {
+	clear: both;
+	padding: 0 10px;
+}
+
+
+
+
+
+/* *********************************************************************************************************************
+ * Common columns definitions
+ */
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+	float: left;
+	margin: 0 3% 0 0;
+}
+
+.col1.last, .col2.last, .col3.last, .col4.last, .col5.last, .col6.last, .col7.last, .col8.last, .col9.last, .col10.last, .col11.last, .col12 {
+	margin: 0;
+}
+
+.col1 { width: 5.5%; }
+.col2 { width: 14%; }
+.col3 { width: 22.5%; }
+.col4 { width: 31%; }
+.col5 { width: 39.5%; }
+.col6 { width: 48%; }
+.col7 { width: 56.5%; }
+.col8 { width: 65%; }
+.col9 { width: 73.5%; }
+.col10 { width: 82%; }
+.col11 { width: 90.5%; }
+.col12 { width: 99%; margin: 0; }
+
+.col1 img, .col2 img, .col3 img, .col4 img, .col5 img, .col6 img, .col7 img, .col8 img, .col9 img, .col10 img, .col11 img, .col12 img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+
+
+
+
+/* *********************************************************************************************************************
+ * Disable padding left/right 10px if I'm 1024 or gibber - correct percentage math
+ */
+@media all and (min-width: 1024px) {
+	.main_wrapper {
+		max-width: 1010px;
+	}
+
+	.main_wrapper .onerow {
+		padding: 0;
+	}
+	
+}
+
+
+
+
+
+/* *********************************************************************************************************************
+ * Small devices
+ */
+@media all and (max-width: 768px) 
+
+	{
+		
+
+		.slicknav_menu {display:block; position:absolute; left:20px; top:20px; z-index:1000;}
+		.slicknav_menu a.slicknav_btn {width:32px; height:32px; background:url(../images/menu_icon.png) no-repeat left top; 
+		text-indent:-9999em; display:block;}
+		.slicknav_menu .slicknav_nav {width:220px; background:#fff; padding:15px; margin:0; -webkit-border-radius:5px;
+		-moz-border-radius:5px; border-radius:5px;}
+		.slicknav_menu .slicknav_nav li {position:relative;}
+		.slicknav_menu .slicknav_nav li a {font-size:13px; color:#000; text-transform:uppercase; font-weight:600; 
+		padding:0 10px; line-height:40px; display:block; border-bottom:1px dashed #fff; border-radius:0 0 3px 3px;
+		-webkit-border-radius:0 0 3px 3px; -moz-border-radius:0 0 3px 3px;}
+		.slicknav_menu .slicknav_nav li a:hover {background:#000; color:#fff;}
+		.slicknav_menu .slicknav_nav li a a {padding:0; border:0;}
+		.slicknav_menu .slicknav_nav li a span {width:auto; position:absolute; right:10px; top:0; font-size:13px;}
+		.slicknav_menu .slicknav_nav li ul {background:#fff; border-radius:5px; -webkit-border-radius:5px; 
+		-moz-border-radius:5px; margin:10px 0 0 0; padding:10px; border:1px dashed #000;}
+		.slicknav_menu .slicknav_nav li ul li a {border:none; color:#000; line-height:24px;}
+		.slicknav_menu .slicknav_nav li ul li a:hover {background:none; color:#a90000;}
+		
+		.header .navigation {display:none;}
+		.bodycontainer .objective_blk .content_blk {min-height:250px;}
+		.bodycontainer .target_blk .wa_inner .kb_topics .kbt_com {min-height:140px;}
+
+		.organsier_blk .ob_com .obc_top span {text-align:center;}
+		
+		.header .ms_top .dates span {background: url(../images/date.png) no-repeat left 5px;}
+			.bodycontainer .question_blk .qb_com {width:50%!important;}
+		.header .ms_top .btn_blk { position: static !important;}
+		.content_container .psnmembers ul li {width: 100%!important;}
+	
+	}
+
+@media all and (max-width:640px) 
+
+	{
+		
+		.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11 
+		{
+			float: none; width: 99%;
+		}
+		
+		.bodycontainer .half_col_containers .hib_com h1 {color:#fff;}
+		.bodycontainer .half_col_containers .hib_com p{color:#fff;}
+		.footer .ft_inner p { text-align:center; line-height:20px; font-size:13px;}
+		.footer .ft_inner p a{ line-height:20px;}
+		.header .hd_top .left {display:block; text-align:center; padding:0; float:none;}
+		.header .hd_top .left .dates {display:block; padding:0 0 10px;}
+		.header .hd_top .left .dates span {display:inline-block;}
+		.header .hd_top .right {display:block; text-align:center; padding:0; float:none;}
+		.header .hd_top .right ul {display:block; float:none;}
+		.header .hd_top .right ul li {display:inline-block; float:none; padding:0 2px;}
+		.footer {padding: 10px 0;}
+		.bodycontainer .half_col_containers .hib_com {width:100%; padding:30px 20px;}
+		.bodycontainer .half_col_containers .hib_com.right {width:100%; background:#f7f7f7; padding:30px 20px;}  
+		
+		.bodycontainer .half_col_containers {width:100%; float:left; 
+		background: -webkit-gradient(linear, 0deg, #000 100%, #f7f7f7 100%);
+		background: -webkit-linear-gradient(0deg, #000 100%, #f7f7f7 100%); 
+		background: -moz-linear-gradient(0deg, #000 100%, #f7f7f7 100%); 
+		background: -ms-linear-gradient(0deg, #000 100%, #f7f7f7 100%); 
+		background: -o-linear-gradient(0deg, #000 100%, #f7f7f7 100%); }
+		
+		.bodycontainer .objective_blk .content_blk {min-height:inherit; height:auto;}
+		
+		.bodycontainer .target_blk .wa_inner .kb_topics .kbt_com {width:33%; min-height:145px;}
+		
+		#our_sponsors .owl-pagination {display:none;}
+		.content_container .partners_blk_sep .pb_inner .pbi_com .logo {
+    	width:inherit; float:inherit; margin:0 0 20px; padding: 0; display: block;}
+	
+		.content_container .partners_blk_sep .pb_inner .pbi_com .info {
+		display: block; padding:0;}
+		.content_container .kb_topics .kbt_com {width:inherit; float:inherit; display:block;}
+		.bodycontainer .question_blk .qb_com {width:50%!important;}
+		.header .ms_top .btn_blk { position: static !important;}
+		
+		.content_container .cc_right.top {display:block;}
+		.content_container .cc_right.bottom {display:none;}
+
+	}
+	
+@media all and (max-width:480px) 
+
+	{	
+		.header .ms_top .logo_blk img {max-width:200px;}
+		.header .hd_top .left span {background:none; padding:0; line-height:16px;}
+		.header .ms_top .date_blk span {padding:10px 20px!important; line-height:30px;}
+		
+		.form_blk .mauticform_wrapper .mauticform-row {width:100%!important; max-width:100%!important;}
+		.mauticform-button-wrapper .mauticform-button {width:100%!important; max-width:100%!important;} 
+		
+		.bodycontainer .target_blk .wa_inner .kb_topics .kbt_com {width:50%; min-height:130px;}
+		.bodycontainer .question_blk .qb_com {  width: 100% !important;
+}
+		
+	}
+	
+@media all and (max-width:360px) 
+
+	{
+		.bodycontainer .target_blk .wa_inner .kb_topics .kbt_com {min-height:160px;}
+		.bodycontainer .question_blk .qb_com {
+    width: 100% !important;
+}
+	}
+	
+@media all and (max-width:320px) 
+
+	{
+		
+	}
