@@ -580,6 +580,8 @@ letter-spacing: 0.5px;    line-height: 30px;    padding: 0 0 40px;    text-align
 
 .content_container strong.sub_head {color:#a90000; font-family:"Rajdhani",sans-serif; font-size:22px; font-weight:600;
 letter-spacing:0.5px;  padding:0 0 20px;  text-align:left; display:block;}
+.content_container strong.sub_head_2 {font-weight:600;
+letter-spacing:0.5px; text-align:left; display:block;}
 .content_container p {display:block; font-size:16px; line-height:26px; letter-spacing:0.5px; color:#222; padding:0 0 20px; 
 text-align:justify; font-family: 'Cuprum', sans-serif;}
 
@@ -601,6 +603,7 @@ font-weight: 300;
 letter-spacing: 0.25px;
 line-height:28px;
 margin:0 0 0 20px;
+padding:0 0 20px;
 list-style:square;
 font-family: 'Cuprum', sans-serif;
 }
