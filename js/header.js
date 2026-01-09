@@ -18,7 +18,7 @@ document.write('<li><a href="psn-members.html">PSN MEMBERS </a></li>')
 document.write('<li><a href="MOM.html">MOM</a></li>')
 document.write('<li><a href="reports.html">Documents</a></li>')
 document.write('<li><a href="events.html">Events</a></li>')
-<!--document.write('<li><a href="psn-activities.html">PSN ACTIVITIES </a></li>')-->
+//document.write('<li><a href="psn-activities.html">PSN ACTIVITIES </a></li>')
 //document.write('<li><a href="foundingmembers.html">FOUNDING MEMBERS </a></li>')
 document.write('<li><a href="index.html#contact">CONTACT US</a></li>')
 document.write('<li><a href="http://unggim-psn.org/submit-eoi.html?utm_source=06july2017&utm_medium=email&utm_campaign=Invitation" class="active">Be a Member</a></li>')
