@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UN-GGIM PSN | Event Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/owl.carousel.html" type="text/css" media="all">
+<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all" />
+
+<link rel="stylesheet" href="css/font-awesome.html" type="text/css" media="all" />
+<link rel="stylesheet" href="css/ionicons.min.html" type="text/css" media="all" />
+
+<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600,700" rel="stylesheet"> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+        }
+
+        .gallery-item img {
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .lightbox {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(8px);
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .nav-btn {
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d1d5db;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af;
+        }
+            .header .ms_top .btn_blks {display:none;}
+    
+    .header .ms_top {position:relative;}
+    .header .ms_top .btn_blk {position:absolute; right:30px; bottom:30px; z-index:100;}
+    .header .ms_top .btn_blk a {display:block; background:#e3000a; text-align:center; padding:15px 20px; line-height:24px; 
+    text-transform:uppercase; font-size:20px; letter-spacing:0.5px; color:#fff; border-radius:5px; font-weight:600;  
+    font-family: "Rajdhani",sans-serif; -webkit-animation:board-meeting 1s infinite; -moz-animation:board-meeting 1s infinite;
+    animation:board-meeting 1s infinite;} 
+    .header .ms_top .btn_blk a b {display:block; text-transform:none;}
+    .header .ms_top .btn_blk a:hover {background:#0094cc; color:#fff;}
+
+     h1 {color:#fff;}
+    @-webkit-keyframes board-meeting {
+        0%  {background-color:#e3000a;}
+        49% { background-color: #e3000a; }
+        50% { background-color: #0094cc; }
+        99% { background-color: #0094cc; }
+        100% { background-color: #e3000a; }
+      }
+      @-moz-keyframes board-meeting {
+        0%   { background-color: #e3000a; }
+        49% { background-color: #e3000a; }
+        50% { background-color: #0094cc; }
+        99% { background-color: #0094cc; }
+        100% { background-color: #e3000a; }
+      }
+      @keyframes board-meeting {
+        0%   { background-color: #e3000a; }
+        49% { background-color: #e3000a; }
+        50% { background-color: #0094cc; }
+        99% { background-color: #0094cc; }
+        100% { background-color: #e3000a; }
+      }
+
+    </style>
+</head>
+<body class="text-gray-900 antialiased">
+    <div id="maincontainer">
+
+<a class="scrollToTop" href="#" style="display:none;">&nbsp;</a>
+
+<!--header div start here-->
+
+<div class="header">
+
+    <div class="navigation">
+        <div class="main_wrapper">
+            <div class="onerow">
+                <div class="col12">
+                    <ul id="menu">
+                        <li><a href="index-2.html">HOME</a></li>
+                        <li><a href="JavaScript:Void(0)">ABOUT psn</a>
+                        
+                        <ul class="one">
+                         <li><a href="preamble.html">PREAMBLE</a></li>
+                        <li><a href="about.html#VISION">VISION</a></li>
+                        <li><a href="about.html#PURPOSE">PURPOSE </a></li>
+                         <li><a href="about.html#GUIDING">GUIDING PRINCIPLES</a></li>
+                        </ul>
+                        
+                        </li>                                 
+                        <li><a href="members.html">PSN BOARD </a></li>
+                         <li><a href="psn-members.html">PSN MEMBERS </a></li>
+                        <li><a href="MOM.html">MOM</a></li>
+                        <li><a href="reports.html">KNOWLEDGE BASE</a></li>
+
+                        <li><a href="JavaScript:Void(0)">EVENTS</a>
+                         <ul class="one">
+                            <li><a href="events.html">UPCOMING EVENTS</a></li>
+                            <li><a href="events gallery.html">EVENTS GALLERY</a></li>
+                        </ul>
+                        </li>
+                        <!--<li>
+                            <a href="JavaScript:Void(0)">ACTIVITIES</a>
+                            <ul class="one">
+                                <li><a href="https://web.archive.org/web/20230127085000/https://unwgic2022.in/side-event4.php">Side Event @ UNWGIC '22 - 10 Oct</a></li>
+                                <li><a href="https://web.archive.org/web/20230127074035/https://unwgic2022.in/side-event-gi.php">Side Event @ UNWGIC '22 - 13 Oct</a></li>
+                                
+                            </ul>
+                        </li>-->
+                        <!--<li><a href="foundingmembers.html">FOUNDING MEMBERS </a></li>-->
+                         <li><a href="#contact">CONTACT US</a></li>
+                         <li><a href="submit-eoi0c1f.html?utm_source=06july2017&amp;utm_medium=email&amp;utm_campaign=Invitation" class="active">Be a Member</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ms_top">
+        <img src="images/logo-new-2.png" />
+            
+    </div>
+
+</div>
+
+<!--header div end here-->
+
+<!--Bodycontainer div start here-->
+
+<div class="content_container">
+    <div class="main_wrapper">
+        <div class="onerow">
+            <div class="col12">
+                <h1>
+                    Events Gallery
+                </h1>
+            </div>
+        </div></div></div></div>
+
+<!--Bodycontainer div end here-->
+
+    
+</div>
+
+    <!-- Header -->
+    <header>
+        <h1>Events gallery</h1>
+    </header>
+
+
+    <!-- Gallery Grid -->
+    <main class="max-w-7xl mx-auto px-4 pb-20">
+        <div id="gallery" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
+            <!-- Items injected by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox fixed inset-0 z-50 flex-col items-center justify-center p-4" onclick="closeLightbox()">
+        
+        <!-- Navigation: Prev -->
+        <button class="nav-btn absolute left-4 md:left-8 top-1/2 -translate-y-1/2 p-3 rounded-full text-white z-10" onclick="prevImage(event)" aria-label="Previous image">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+
+        <!-- Navigation: Next -->
+        <button class="nav-btn absolute right-4 md:right-8 top-1/2 -translate-y-1/2 p-3 rounded-full text-white z-10" onclick="nextImage(event)" aria-label="Next image">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+
+        <!-- Close Button -->
+        <button class="absolute top-6 right-6 text-white/70 hover:text-white transition-colors focus:outline-none z-20" onclick="closeLightbox()" aria-label="Close lightbox">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        
+        <!-- Content Area -->
+        <div class="max-w-5xl w-full h-[80vh] flex flex-col items-center justify-center" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="Full view" class="max-w-full max-h-full object-contain rounded-lg shadow-2xl">
+            
+            <!-- Image Info -->
+            <div class="mt-6 text-center text-white px-4">
+                <h2 id="lightbox-title" class="text-xl font-semibold leading-tight"></h2>
+                <p id="lightbox-meta" class="text-sm text-gray-400 mt-1"></p>
+                <p id="lightbox-counter" class="text-xs text-gray-500 mt-4 tracking-widest uppercase"></p>
+            </div>
+        </div>
+    </div>
+
+
+<!--Footer div start here-->
+
+    <script type="text/javascript" src="js/footer.js"></script>
+
+<!--Footer div end here-->
+
+    <script>
+        const imageList = [
+            "https://unggim-psn.wgicouncil.org/images/events/UNGGIM PSN Leadership met in London alongside the Geospatial Summit.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN representation at 14th session of UNGGIM at UN Headquarters in New York.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN Meet up at 15th session of UNGGIM at UN Headquarters in New York3.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN Meet up at 15th session of UNGGIM at UN Headquarters in New York2.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN Meet up at 15th session of UNGGIM at UN Headquarters in New York.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN Meet up at 14th session of UNGGIM at UN Headquarters in New York.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN intervention at the 15th session of UNGGIM.jfif2.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN intervention at the 15th session of UNGGIM.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN intervention at the 14th session of UNGGIM.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN chaired the meeting of UN-GGIM Thematic Network at the side event of UN-GGIM 15th Session at UN Head Quarters in New York3.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN chaired the meeting of UN-GGIM Thematic Network at the side event of UN-GGIM 15th Session at UN Head Quarters in New York2.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN chaired the meeting of UN-GGIM Thematic Network at the side event of UN-GGIM 15th Session at UN Head Quarters in New York.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN Chair at the 14th Plenary meeting of the UN-GGIM Asia Pacific held in Kintex, Goyang, South Korea.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the UN-GGIM Asia Pacific 11th Plenary.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the UN-GGIM Arab States 11th Plenary Pre-Workshops at Doha, Qatar6.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the UN-GGIM Arab States 11th Plenary Pre-Workshops at Doha, Qatar5.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the UN-GGIM Arab States 11th Plenary Pre-Workshops at Doha, Qatar4.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the UN-GGIM Arab States 11th Plenary Pre-Workshops at Doha, Qatar3.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the UN-GGIM Arab States 11th Plenary Pre-Workshops at Doha, Qatar2.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the UN-GGIM Arab States 11th Plenary Pre-Workshops at Doha, Qatar.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the UN-GGIM Americas 12th Session3.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the UN-GGIM Americas 12th Session2.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the UN-GGIM Americas 12th Session.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the UN-GGIM 15th Session2.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the UN-GGIM 15th Session.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the Panel on UN GGIM-IGIF at UN-GGIM 13th Session.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the 14th Plenary meeting of the UN-GGIM Asia Pacific held in Kintex, Goyang, South Korea5.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the 14th Plenary meeting of the UN-GGIM Asia Pacific held in Kintex, Goyang, South Korea4.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the 14th Plenary meeting of the UN-GGIM Asia Pacific held in Kintex, Goyang, South Korea3.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the 14th Plenary meeting of the UN-GGIM Asia Pacific held in Kintex, Goyang, South Korea2.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the 14th Plenary meeting of the UN-GGIM Asia Pacific held in Kintex, Goyang, South Korea.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the 12th Plenary of the UN-GGIM Arab States held during February 2-6, 2025 in Jeddah, Kingdom of Saudi Arabia4.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the 12th Plenary of the UN-GGIM Arab States held during February 2-6, 2025 in Jeddah, Kingdom of Saudi Arabia3.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the 12th Plenary of the UN-GGIM Arab States held during February 2-6, 2025 in Jeddah, Kingdom of Saudi Arabia2.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the 12th Plenary of the UN-GGIM Arab States held during February 2-6, 2025 in Jeddah, Kingdom of Saudi Arabia.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the 12th Plenary meeting of the UN-GGIM Europe in Brussels3.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the 12th Plenary meeting of the UN-GGIM Europe in Brussels2.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at the 12th Plenary meeting of the UN-GGIM Europe in Brussels.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/UN-GGIM PSN at 15th session of UNGGIM at UN Headquarters in New York3.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/Leadership of the UN-GGIM Thematic Network at the UN-GGIM 14th session at UN HQ, New York.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/Chair UN-GGIM PSN introducing Agenda item 5 - Contribution of thematic networks to the global geospatial information on behalf of the UN-GGIM3.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/Chair UN-GGIM PSN introducing Agenda item 5 - Contribution of thematic networks to the global geospatial information on behalf of the UN-GGIM2.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/Chair UN-GGIM PSN introducing Agenda item 5 - Contribution of thematic networks to the global geospatial information on behalf of the UN-GGIM.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/Asia Pacific Regional Consultations.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/Arab States Regional Consultations.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/Americas Regional Consultations.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/Africa Regional Consultations.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/13th UNGGIM Committee of Experts Meeting at UN Headquarters in New York.jpg",
+            "https://unggim-psn.wgicouncil.org/images/events/10th Session of UN-GGIM Americas in Santiago de Chile from October 17-20, 2023.jpg"
+        ];
+
+        const images = imageList.map(url => {
+            const fileName = url.substring(url.lastIndexOf('/') + 1);
+            const title = decodeURIComponent(fileName).replace(/\.(jpg|jpeg|png|jfif2|jfif|webp)$/i, '');
+            return {
+                src: url,
+                title: title,
+                meta: 'UN-GGIM Event'
+            };
+        });
+
+        let currentIndex = 0;
+        const gallery = document.getElementById('gallery');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxTitle = document.getElementById('lightbox-title');
+        const lightboxMeta = document.getElementById('lightbox-meta');
+        const lightboxCounter = document.getElementById('lightbox-counter');
+
+        function renderGallery() {
+            gallery.innerHTML = images.map((img, index) => `
+                <div class="gallery-item relative overflow-hidden rounded-xl bg-gray-200 aspect-square cursor-pointer group" onclick="openLightbox(${index})">
+                    <img src="${img.src}" alt="${img.title}" class="w-full h-full object-cover object-top" loading="lazy">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-3 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 bg-gradient-to-t from-black/80 to-transparent">
+                        <p class="text-white font-medium text-[11px] leading-tight line-clamp-2">${img.title}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function updateLightbox() {
+            const data = images[currentIndex];
+            lightboxImg.style.opacity = '0';
+            
+            setTimeout(() => {
+                lightboxImg.src = data.src;
+                lightboxTitle.innerText = data.title;
+                lightboxMeta.innerText = data.meta;
+                lightboxCounter.innerText = `${currentIndex + 1} / ${images.length}`;
+                lightboxImg.style.opacity = '1';
+            }, 50);
+        }
+
+        function openLightbox(index) {
+            currentIndex = index;
+            updateLightbox();
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = ''; 
+        }
+
+        function nextImage(e) {
+            if (e) e.stopPropagation();
+            currentIndex = (currentIndex + 1) % images.length;
+            updateLightbox();
+        }
+
+        function prevImage(e) {
+            if (e) e.stopPropagation();
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateLightbox();
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') nextImage();
+            if (e.key === 'ArrowLeft') prevImage();
+        });
+
+        window.onload = () => {
+            renderGallery();
+            lightboxImg.style.transition = 'opacity 0.3s ease';
+        };
+    </script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.html"></script>
+<script type="text/javascript" src="js/jquery.slicknav.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#menu').slicknav();
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      $("#our_sponsors").owlCarousel({
+        autoPlay: 3000,
+        items : 4,
+        itemsDesktop : [1199,4],
+        itemsDesktopSmall : [979,3],
+        itemsTablet :   [768,1],
+        itemsMobile :   [480,1],
+
+        autoPlay : true,
+        stopOnHover : true,
+
+        navigation : false,
+        navigationText : ["prev", "next"],
+        rewindNav : true,
+        scrollPerPage : false,
+
+        pagination : true,
+        paginationNumbers : false,
+
+      });
+
+    });
+</script>
+
+<script type="text/javascript">
+    $(function() {
+    $('.header .navigation #menu li a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top -10
+          }, 500);
+          return false;
+        }
+      }
+    });
+    });
+</script>
+</body>
+</html>
