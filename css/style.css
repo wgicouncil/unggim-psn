@@ -65,7 +65,7 @@ html, body {font-family: 'Cuprum', sans-serif;}
 .header .navigation {width:100%; float:left; background:#0094cc;}
 .header .navigation #menu {display:block; padding:0; text-align:center;}
 .header .navigation #menu li {display:inline-block; padding:0; position:relative;}
-.header .navigation #menu li a {color:#fff; display:block; font-size:16px; font-weight:700; 
+.header .navigation #menu li a {color:#fff; display:block; font-size:14px; font-weight:700; 
 padding:0 15px; text-transform: uppercase;	font-family:'Cuprum', sans-serif; letter-spacing:0.5px;	line-height:50px;}
 .header .navigation #menu li a:hover {background:#ffde00; color:#000;}
 
